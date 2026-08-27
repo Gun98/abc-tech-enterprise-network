@@ -306,7 +306,7 @@ show ip nat statistics
 
 ---
 
-## 12. What I Learned
+## 12. 배운것
 
 VLAN, Routing, DHCP, NAT, ACL 등의 기능이 각각 독립적으로 동작하는 것이 아니라 End-to-End 통신 과정에서 서로 연결되어 있다는 점을 확인했습니다.
 
