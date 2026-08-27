@@ -8,6 +8,10 @@ Cisco Packet Tracer 기반 **본사–지사 기업 네트워크 구축 및 장�
 
 > 본 프로젝트는 실제 상용망이 아닌 Cisco Packet Tracer 기반 시뮬레이션 프로젝트입니다.
 
+### Key Technologies
+
+`VLAN` `802.1Q Trunk` `STP` `LACP` `OSPF` `DHCP Relay` `NAT/PAT` `ACL` `SSH` `NTP` `Syslog`
+
 ---
 
 ## 1. Network Topology
@@ -39,6 +43,8 @@ Cisco Packet Tracer 기반 **본사–지사 기업 네트워크 구축 및 장�
 | External | - | `198.51.100.0/24` | - |
 
 본사는 `10.10.x.x`, 지사는 `10.20.x.x`로 주소 영역을 구분하고, 본사 VLAN 번호와 세 번째 Octet을 대응시켜 주소만으로도 네트워크의 역할을 쉽게 파악할 수 있도록 설계했습니다.
+
+> `203.0.113.0/24`, `198.51.100.0/24`는 실제 공인망이 아닌 테스트/문서용 주소 대역이며, Packet Tracer에서 ISP 및 외부망을 모의하기 위해 사용했습니다.
 
 ---
 
@@ -300,7 +306,7 @@ show ip nat statistics
 
 ---
 
-## 12. 배운점
+## 12. What I Learned
 
 VLAN, Routing, DHCP, NAT, ACL 등의 기능이 각각 독립적으로 동작하는 것이 아니라 End-to-End 통신 과정에서 서로 연결되어 있다는 점을 확인했습니다.
 
